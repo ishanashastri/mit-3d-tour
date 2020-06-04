@@ -65,6 +65,7 @@
         var audioLoader = new THREE.AudioLoader();
         audioLoader.load( './sounds/bubbles.ogg', function( buffer ) {
           sound.setBuffer( buffer );
+          sound.autoplay;
           sound.setLoop( true );
           sound.setVolume( 0.5 );
           sound.play();
@@ -90,7 +91,7 @@
         //
         renderer = new THREE.WebGLRenderer({ antialias: true });
         renderer.setPixelRatio(window.devicePixelRatio);
-        //renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setSize(window.innerWidth, window.innerHeight);
         container.appendChild(renderer.domElement);
         //effect = new ParallaxBarrierEffect( renderer );
         //effect.setSize( (window.innerWidth||2), (window.innerheight||2) );
