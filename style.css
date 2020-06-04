@@ -1,0 +1,29 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: black;
+  overflow: hidden;
+  font-family: 'Comic Sans MS';
+}
+.text {
+  width: 5%;
+  position: fixed;
+  padding: 2vh;
+  border: 0;
+  margin-left: 4vw;
+  margin-top: 4vw;
+}
+h2{
+  color: rgb(218, 18, 245);
+}
+h1{
+  position: absolute;
+  top: -45px;
+  color: greenyellow;
+  font-size: 30px;
+  margin-left: 50vw;
+}
+a:visited{
+  color: #0645AD ;
+}
