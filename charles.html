@@ -18,7 +18,7 @@
         <div style="padding: 40px">chah ls river</div>
         <div style="margin-left: 800px;">char s rib er</div>
       </h2>
-	  <h1>go to <a href="/index.html">lobby 7</a></h1> 
+	  <h1>go to <a href="./index.html">lobby 7</a></h1> 
     </div>
     <script type="module">
       import * as THREE from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.module.js';
@@ -45,7 +45,7 @@
         camera.position.z = 3200;
         scene = new THREE.Scene();
         scene.background = new THREE.CubeTextureLoader()
-          .setPath('/textures/')
+          .setPath('./textures/')
           .load([
             'river.jpg',
             'river.jpg',
@@ -63,7 +63,7 @@
 
         // load a sound and set it as the Audio object's buffer
         var audioLoader = new THREE.AudioLoader();
-        audioLoader.load( '/sounds/river.ogg', function( buffer ) {
+        audioLoader.load( './sounds/river.ogg', function( buffer ) {
           sound.setBuffer( buffer );
           sound.setLoop( true );
           sound.setVolume( 0.5 );

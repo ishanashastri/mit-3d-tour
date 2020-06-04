@@ -18,7 +18,7 @@
         <div style="padding: 50px">lah bey 7</div>
         <div style="margin-left: 800px;">loh bi 7</div>
       </h2>
-      <h1>go to <a href="/killian.html">killian court</a></h1> 
+      <h1>go to <a href="./killian.html">killian court</a></h1> 
     </div>
     <script type="module">
       import * as THREE from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.module.js';
@@ -45,7 +45,7 @@
         camera.position.z = 3200;
         scene = new THREE.Scene();
         scene.background = new THREE.CubeTextureLoader()
-          .setPath('/textures/')
+          .setPath('./textures/')
           .load([
             'nx.PNG',
             'px.PNG',
@@ -63,7 +63,7 @@
 
         // load a sound and set it as the Audio object's buffer
         var audioLoader = new THREE.AudioLoader();
-        audioLoader.load( '/sounds/bubbles.ogg', function( buffer ) {
+        audioLoader.load( './sounds/bubbles.ogg', function( buffer ) {
           sound.setBuffer( buffer );
           sound.setLoop( true );
           sound.setVolume( 0.5 );
